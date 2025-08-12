@@ -34,6 +34,50 @@
     bottom: -120px; /* adjust how far from the bottom */
     border-radius: 5px;
 }
+.badges-section {
+  margin-top: 150px; /* gap from video container */
+}
+
+.custom-badge {
+  background-color: #ffeee8; /* light peach */
+  border-radius: 10px;
+  padding: 20px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 250px;
+  height: 80px;
+}
+
+.custom-badge .number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f4511e; /* orange */
+  margin-right: 15px;
+}
+
+.custom-badge .text {
+  font-size: 0.9rem;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.custom-badge .circle {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  background-color: #f4511e; /* orange */
+  border-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .custom-badge {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
 
 
