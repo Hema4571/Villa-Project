@@ -9,31 +9,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <!--Top Info Bar-->
-  <div class="container-fluid py-1 bg-light">
-  <div class="row">
-    <div class="col-md-3 text-secondary small">
-      <img src="img/email-icon.png" style="width:15px;">
-      info@company.com
+  <!--Top Info Bar-->
+  <div class="container-fluid">
+    <div class="row text-secondary bg-light">
+      <div class="col-2 ms-5 pe-3">
+        <span><img src="img/email-icon.png" style="width:18px"></span>
+        <span>info@company.com</span>
       </div>
-    <div class="col-md-3 text-secondary small">
-      <span><i class="fa-solid fa-map py-1" ></i></span>
-      <span>Sunny Isles Beach Fl 33160</span>
-    </div>
-    <div class="col-md-3">
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-brands fa-square-twitter"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-square-instagram"></i>
+      <div class="col-7 me-5">
+        <i class="fa-solid fa-map text-danger"></i>
+          <span>Sunny Isles Beach, FL 33160</span>
+      </div>
+      <div class="col me-">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+      </div>
     </div>
   </div>
-</div>
+  
 <!--Top Info Bar-->
   <!-- Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light">
+  <nav class="navbar navbar-expand-lg navbar-light fixed">
     <div class="container">
       <a href="index.html" class="navbar-brand">
-        <h3 class="fw-bold fs-4">VILLA</h3>
+        <h3 class="fw-bold fs-4 ms-4">VILLA</h3>
       </a>
       <button 
       class="navbar-toggler" 
@@ -46,7 +47,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto p-3 gap-5">
+      <ul class="navbar-nav mx-auto p-3 ps-5 gap-5">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
@@ -64,7 +65,7 @@
             Schedule a visit
           </a>-->
          <button class="btn btn-sm btn-dark rounded-pill m-1">
-          <img src="img/info-icon-04.png" style="width:20px;">
+          <i class="fa-solid fa-calendar text-danger"></i>
           Schedule a visit</button>
          </li>
         </ul>
@@ -75,12 +76,12 @@
 
   <!--Home banner-->
   <!-- <header class="main-header">-->
-  <header class="header">
-  
-  
+<header class="header">
+  <div class="text">
+        <button class="btn-lg fs-5 fw-semibold">Toronto, <span class="text-danger">Canada</span></button>
+        <h2 class="fs-1 fw-bold">Hurry<br>Get the best<br>villa for you</h2>        
 </header>
       
-
   <!--Header banner-->
 
   <div class="container py-5">
@@ -185,7 +186,6 @@
 </div>
 </div>
 </div>
-
 <!--image with playbutton-->
 <section class="bgimg">
     <div class="text-box">
@@ -219,10 +219,10 @@
 
       <div class="col-md-4">
         <div class="custom-badge mx-auto position-relative">
-          <div class="number">20</div>
+          <div class="number">12</div>
           <div class="text">
-            <strong>Projects</strong><br>
-            In Progress
+            <strong>Years</strong><br>
+            Experience
           </div>
           <div class="circle"></div>
         </div>
@@ -230,15 +230,14 @@
 
       <div class="col-md-4">
         <div class="custom-badge mx-auto position-relative">
-          <div class="number">15</div>
+          <div class="number">24</div>
           <div class="text">
-            <strong>Clients</strong><br>
-            Served
+            <strong>Awwards</strong><br>
+            Won 2023
           </div>
           <div class="circle"></div>
         </div>
       </div>
-
     </div>
   </div>
 </section>
@@ -248,61 +247,310 @@
 <!--Best deal section-->
 <div class="container-fluid-lg bg-light p-5">
   <!--row1-->
-  <div class="row mb-5">
-    <div class="col-8">
+  <div class="row mb-5 align-items-center">
+    <div class="col-md-8 col-12 mb-3 mb-md-0">
         <p class="fw-bold text-danger text-uppercase small">|Best deal</p>
         <h3 class="fw-bold">Find Your Best Deal<br>Right Now!</h3>
     </div>
-    <div class="col me-2 pt-5 mt-3">
-        <button type="button" class="btn btn-danger btn-md">Apartment</button>
-        <button type="button" class="btn btn-dark btn-md">villahouse</button>
-        <button type="button" class="btn btn-dark btn-md">penthouse</button>
+    <div class="col-md-4 col-12 d-flex flex-wrap gap-2 justify-content-md-end">
+        <button type="button" class="btn btn-danger btn-lg">Apartment</button>
+        <button type="button" class="btn btn-dark btn-lg">villahouse</button>
+        <button type="button" class="btn btn-dark btn-lg">penthouse</button>
     </div>
   </div>
-<!--row1-->
-<!--row2-->
+  <!--row1-->
+  
+  <!--row2-->
   <div class="row">
     <!--column1-->
-    <div class="col-3">
+    <div class="col-md-3 col-12 mb-3 mb-md-0 d-flex justify-content-center">
       <div class="card" style="width: 17rem; height:20rem;">
           <div class="card-body d-flex justify-content-between shadow">
-          <span class="text-secondary fw-semibold">Total flat space</span>
-          <span>185m2</span>
+            <span class="text-secondary fw-1">Total flat space</span>
+            <span class="fw-bold">185m2</span>
           </div>
           <div class="card-body d-flex justify-content-between shadow">
-          <span class="text-secondary fw-semibold">Total flat space</span>
-          <span>185m2</span>
+            <span class="text-secondary fw-1">Floor number</span>
+            <span class="fw-bold">26th</span>
           </div>
           <div class="card-body d-flex justify-content-between shadow">
-          <span class="text-secondary fw-semibold">Total flat space</span>
-          <span>185m2</span>
+            <span class="text-secondary fw-1">Number of rooms</span>
+            <span class="fw-bold">4</span>
           </div>
           <div class="card-body d-flex justify-content-between shadow">
-          <span class="text-secondary fw-semibold">Total flat space</span>
-          <span>185m2</span>
+            <span class="text-secondary fw-1">Parking Availble</span>
+            <span class="fw-bold">Yes</span>
           </div>
           <div class="card-body d-flex justify-content-between shadow">
-          <span class="text-secondary fw-semibold">Total flat space</span>
-          <span>185m2</span>
+            <span class="text-secondary fw-1">Payment Process</span>
+            <span class="">Bank</span>
           </div>
-          
       </div>
     </div>
     <!--column1-->
-    <!--column2-->
-    <div class="col-6">
-      <img src="img/property-05.jpg" style="width:500px; height:350px">
-    </div>
-    <!--column2-->
-    <!--column2-->
-    <div class="col-3">
 
+    <!--column2-->
+    <div class="col-md-6 col-12 mb-3 mb-md-0 d-flex justify-content-center">
+      <img src="img/property-05.jpg" style="width:550px; height:350px" class="img-fluid">
     </div>
     <!--column2-->
+
+    <!--column3-->
+    <div class="col-md-3 col-12">
+      <p class="fs-small fw-bold">Extra Info About Property</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit incidunt reprehenderit beatae doloremque atque natus obcaecati ducimus placeat odio neque.</p>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam animi dolorem et deleniti ipsa? Nemo explicabo sit repellendus placeat soluta.</p>
+      <button class="btn btn-sm btn-dark rounded-pill d-flex align-items-center gap-2">
+        <span class="d-flex justify-content-center align-items-center" 
+              style="width:25px; height:25px; border-radius:50%; background-color:red;">
+          <i class="fa-solid fa-calendar text-light"></i>
+        </span>
+          Schedule a visit
+      </button>
+    </div>
+    <!--column3-->
   </div>
 </div>
-<!--row2-->
 <!--Best deal section-->
+
+<!--Properties Section-->
+<section class="properties">
+  <div class="container">
+    <!-- Row 1 -->
+    <div class="row justify-content-center align-items-center text-center py-4">
+      <div class="col-12">
+        <p class="text-danger text-uppercase small fw-bold my-1">|properties</p>
+        <h3 class="text-capitalize fw-bold my-1">We provide the best <br> Property you like</h3>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="row g-4 my-2 mx-5 me-2">
+      <!-- Property 1 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-light h-100" style="width: 85%;">
+          <img src="img/property-01.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <button class="badge text-light bg-success">Luxury Villa</button>
+              <span class="fw-bold text-danger">$2.264.000</span>
+            </div>
+            <h6 class="fw-bold mb-3">18 New Street Miami, OR 97219</h6>
+            <div class="row text-secondary small mb-2">
+              <div class="col-4">Bedrooms: <span class="text-dark fw-bold">8</span></div>
+              <div class="col">Bathrooms: <span class="text-dark fw-bold">8</span></div>
+            </div>
+            <div class="row text-muted small mb-3">
+              <div class="col-4">Area: <span class="text-dark fw-bold">545m²</span></div>
+              <div class="col-3">Floor: <span class="text-dark fw-bold">3</span></div>
+              <div class="col-5">Parking: <span class="text-dark fw-bold">6 spots</span></div>
+            </div>
+            <hr>
+            <div class="mt-auto text-center">
+              <a href="#" class="btn btn-sm btn-dark rounded-pill">schedule a visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 2 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-light h-100" style="width: 85%;">
+          <img src="img/property-01.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <button class="badge text-light bg-success">Luxury Villa</button>
+              <span class="fw-bold text-danger">$2.264.000</span>
+            </div>
+            <h6 class="fw-bold mb-3">18 New Street Miami, OR 97219</h6>
+            <div class="row text-secondary small mb-2">
+              <div class="col-4">Bedrooms: <span class="text-dark fw-bold">8</span></div>
+              <div class="col">Bathrooms: <span class="text-dark fw-bold">8</span></div>
+            </div>
+            <div class="row text-muted small mb-3">
+              <div class="col-4">Area: <span class="text-dark fw-bold">545m²</span></div>
+              <div class="col-3">Floor: <span class="text-dark fw-bold">3</span></div>
+              <div class="col-5">Parking: <span class="text-dark fw-bold">6 spots</span></div>
+            </div>
+            <hr>
+            <div class="mt-auto text-center">
+              <a href="#" class="btn btn-sm btn-dark rounded-pill">schedule a visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Property 3 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-light h-100" style="width: 85%;">
+          <img src="img/property-01.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <button class="badge text-light bg-success">Luxury Villa</button>
+              <span class="fw-bold text-danger">$2.264.000</span>
+            </div>
+            <h6 class="fw-bold mb-3">18 New Street Miami, OR 97219</h6>
+            <div class="row text-secondary small mb-2">
+              <div class="col-4">Bedrooms: <span class="text-dark fw-bold">8</span></div>
+              <div class="col">Bathrooms: <span class="text-dark fw-bold">8</span></div>
+            </div>
+            <div class="row text-muted small mb-3">
+              <div class="col-4">Area: <span class="text-dark fw-bold">545m²</span></div>
+              <div class="col-3">Floor: <span class="text-dark fw-bold">3</span></div>
+              <div class="col-5">Parking: <span class="text-dark fw-bold">6 spots</span></div>
+            </div>
+            <hr>
+            <div class="mt-auto text-center">
+              <a href="#" class="btn btn-sm btn-dark rounded-pill">schedule a visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--row3-->
+    <div class="row g-4 justify-content-center my-2 mx-5 me-2">
+      <!--property4-->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-light h-100" style="width: 85%;">
+          <img src="img/property-01.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <button class="badge text-light bg-success">Luxury Villa</button>
+              <span class="fw-bold text-danger">$2.264.000</span>
+            </div>
+            <h6 class="fw-bold mb-3">18 New Street Miami, OR 97219</h6>
+            <div class="row text-secondary small mb-2">
+              <div class="col-4">Bedrooms: <span class="text-dark fw-bold">8</span></div>
+              <div class="col">Bathrooms: <span class="text-dark fw-bold">8</span></div>
+            </div>
+            <div class="row text-muted small mb-3">
+              <div class="col-4">Area: <span class="text-dark fw-bold">545m²</span></div>
+              <div class="col-3">Floor: <span class="text-dark fw-bold">3</span></div>
+              <div class="col-5">Parking: <span class="text-dark fw-bold">6 spots</span></div>
+            </div>
+            <hr>
+            <div class="mt-auto text-center">
+              <a href="#" class="btn btn-sm btn-dark rounded-pill">schedule a visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--property5-->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-light h-100" style="width: 85%;">
+          <img src="img/property-01.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <button class="badge text-light bg-success">Luxury Villa</button>
+              <span class="fw-bold text-danger">$2.264.000</span>
+            </div>
+            <h6 class="fw-bold mb-3">18 New Street Miami, OR 97219</h6>
+            <div class="row text-secondary small mb-2">
+              <div class="col-4">Bedrooms: <span class="text-dark fw-bold">8</span></div>
+              <div class="col">Bathrooms: <span class="text-dark fw-bold">8</span></div>
+            </div>
+            <div class="row text-muted small mb-3">
+              <div class="col-4">Area: <span class="text-dark fw-bold">545m²</span></div>
+              <div class="col-3">Floor: <span class="text-dark fw-bold">3</span></div>
+              <div class="col-5">Parking: <span class="text-dark fw-bold">6 spots</span></div>
+            </div>
+            <hr>
+            <div class="mt-auto text-center">
+              <a href="#" class="btn btn-sm btn-dark rounded-pill">schedule a visit</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--property6-->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card bg-light h-100" style="width: 85%;">
+          <img src="img/property-01.jpg" class="card-img-top p-3" alt="...">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <button class="badge text-light bg-success">Luxury Villa</button>
+              <span class="fw-bold text-danger">$2.264.000</span>
+            </div>
+            <h6 class="fw-bold mb-3">18 New Street Miami, OR 97219</h6>
+            <div class="row text-secondary small mb-2">
+              <div class="col-4">Bedrooms: <span class="text-dark fw-bold">8</span></div>
+              <div class="col">Bathrooms: <span class="text-dark fw-bold">8</span></div>
+            </div>
+            <div class="row text-muted small mb-3">
+              <div class="col-4">Area: <span class="text-dark fw-bold">545m²</span></div>
+              <div class="col-3">Floor: <span class="text-dark fw-bold">3</span></div>
+              <div class="col-5">Parking: <span class="text-dark fw-bold">6 spots</span></div>
+            </div>
+            <hr>
+            <div class="mt-auto text-center">
+              <a href="#" class="btn btn-sm btn-dark rounded-pill">schedule a visit</a>
+            </div>
+          </div>
+        </div>
+      </div>  
+    </div>
+</section>
+
+<!--Properties Section-->
+<!--contact Section-->
+<section class="contact-info my-5">
+    <div class="text-box">
+        <p class="fs-small text-danger">|contact us</p>
+        <h2>Get in touch with</h2>
+        <h2>our agents</h2>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="video-container mb-5">
+            <img src="img/map.png" alt="Video Frame">
+          </div>   
+        </div>
+        </div>
+         <!--form-->
+        <div class="col form">
+          <div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10"> 
+      <div class="card shadow-sm p-4">
+        <form>
+          <div class="mb-3">
+            <label for="fullName" class="form-label text-secondary fw-semibold small">Full Name</label>
+            <input type="text" class="form-control rounded-pill" id="fullName" placeholder="Your Name...">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label text-secondary fw-semibold small">Email Address</label>
+            <input type="email" class="form-control rounded-pill" id="email" placeholder="Your E-mail...">
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label text-secondary fw-semibold small">Subject</label>
+            <input type="text" class="form-control rounded-pill" id="subject" placeholder="Subject...">
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label text-secondary fw-semibold small">Message</label>
+            <textarea class="form-control rounded-4" id="message" rows="4" placeholder="Your Message"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark rounded-pill px-4">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+          <!--form-->
+
+      </div>
+    </div>
+</section>
+
+<!--contact Section-->
+<!--footer-->
 
 
       
