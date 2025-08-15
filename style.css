@@ -5,15 +5,13 @@
     position:relative;
     color: white; /* text visible on dark bg */
   }
-.text{
+.text-header{
     max-width: 100%; /* responsive */
     position: absolute;
     left:30%;
     transform: translateX(-40%); /* only center horizontally */
-    bottom: 200px; /* adjust how far from the bottom */
-    
+    bottom: 200px; /* adjust how far from the bottom */  
 }
-
 
 .bgimg {
     background-image: url(img/video-bg.jpg);
@@ -95,14 +93,23 @@
   color: white; /* text visible on dark bg */
   text-align: center;
 }
-.contact-info img {
-    width: 600px;
-    height: 350px;
+.contact-info{
+  background-image: url(img/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  color: white; /* text visible on dark bg */
+  text-align: center;
+}
+.contact-info .cardimg {
+    width: 650px;
+    height: 600px;
     max-width: 100%; /* responsive */
     position: absolute;
-    left: 30%;
+    left: 40%;
     transform: translateX(-50%); /* only center horizontally */
-    bottom: -180px; /* adjust how far from the bottom */
+    top: 240px; /* adjust how far from the bottom */
     border-radius: 5px;
 }
 .contact-info .form {
@@ -115,5 +122,39 @@
     bottom: -155px; /* adjust how far from the bottom */
     border-radius: 5px;
 }
+
+.page-link {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.pagination .page-item {
+  padding: 3px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .page-link {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .page-link {
+    width: 26px;
+    height: 26px;
+    font-size: 0.8rem;
+  }
+}
+
 
 
