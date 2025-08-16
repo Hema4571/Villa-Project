@@ -11,7 +11,7 @@
 <body>
     <div class="bg-light">
   <div class="container">
-    <div class="row align-items-center py-2">
+    <div class="row align-items-center py-2 text-secondary">
       <div class="col-md-4 text-center text-md-start">
         <span><img src="img/email-icon.png" style="width:18px" alt=""></span>
         <span>info@company.com</span>
@@ -44,9 +44,9 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto gap-4">
         <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Properties</a></li>
+        <li class="nav-item"><a class="nav-link" href="./Properties.html">Properties</a></li>
         <li class="nav-item"><a class="nav-link" href="#">Property Details</a></li>
-        <li class="nav-item"><a class="nav-link text-danger" href="#">Contact Us</a></li>
+        <li class="nav-item"><a class="nav-link text-danger" href="">Contact Us</a></li>
         <li class="nav-item">
           <a href="#" class="btn btn-dark rounded-pill px-3">Schedule a visit</a>
         </li>
@@ -73,20 +73,26 @@
   <!--header-->
 <!--Property with details-->
 <div class="container my-5">
-  <div class="row justify-content-evenly align-items-stretch g-4">
+  <div class="row g-4 align-items-stretch">
     
-    <!-- Left Column - Image -->
-    <div class="col-12 col-lg-7">
-      <img src="img/property-01.jpg" class="img-fluid h-75 w-100 rounded" style="object-fit: cover;">
-  
+    <!-- Left Column (Image + Badge) -->
+    <div class="col-12 col-lg-7 d-flex flex-column">
+      <div class="flex-grow-1" style="max-height: 420px;"> <!-- increased -->
+        <img src="img/property-01.jpg" 
+             class="img-fluid w-100 h-100" 
+             style="object-fit: cover;">
       </div>
-    
+      <div class="mt-3">
+        <button class="btn btn-sm btn-light border text-danger px-3">Appartment</button>
+      </div>
+      <p class="fw-bold fs-4">24 New Street Miami, OR 24560</p>
+    </div>
 
-    <!-- Right Column - Card -->
-    <div class="col-12 col-lg-4">
-      <div class="card shadow-lg border-0 h-75" style="min-height: 100%;">
-        <div class="card-body p-4 d-flex flex-column justify-content-evenly">
-          
+    <!-- Right Column (Card aligned with Image) -->
+    <div class="col-12 col-lg-5 d-flex">
+      <div class="card shadow-sm border-0 w-100 h-100" style="max-height: 420px;"> <!-- increased -->
+        <div class="card-body p-4 d-flex flex-column justify-content-between h-100">
+
           <!-- Row 1 -->
           <div class="d-flex align-items-center py-3">
             <img src="img/info-icon-01.png" class="me-3" style="width: 40px;">
@@ -133,12 +139,32 @@
   </div>
 </div>
 
+
 <!--Property with details-->
+<!-- Text under image only -->
+<div class="container mt-0">
+  <div class="row">
+    <div class="col-12 col-lg-7">
+      <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta sed nulla, porro deleniti assumenda error animi ullam nam eum ducimus consequuntur perferendis temporibus hic eveniet quod, veritatis nemo quidem! Sint!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum dignissimos magnam vero omnis, dolore deleniti dolor doloremque corporis cumque explicabo exercitationem culpa aliquam non eligendi cupiditate vitae, fuga delectus iste.</p>
+      </div>
+      <div>
+        <div class="card p-2 bg-light border-0 rounded my-5 fw-semibold" style="width: 45rem;">
+          <P class="text-danger">Best Useful Links?</P>
+          <hr style="color:#ddd">
+          <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, error? Sequi illum delectus ut quos, in optio nemo iure iusto numquam perspiciatis sapiente quia commodi!</P>
+          <p>How does this work?</p>
+          <hr style="color:#ddd">
+          <p>Why is Villa the best</p>
+        </div>
+      </div>
 
-
-
+    </div>
+  </div>
+</div>
 <!--Best deal section-->
-<div class="container-lg bg-light py-5">
+<div class="container-lg bg-light py-5 my-5">
   <!--row1-->
   <div class="row mb-5 align-items-center">
     <div class="col-md-8 col-12 mb-3 mb-md-0">
@@ -202,6 +228,12 @@
   </div>
   <!--row2-->
 </div>
-<!--Best deal section-->    
+<!--Best deal section--> 
+<!--footer-->
+<footer class="bg-dark py-4 mt-5 w-100" style="position:relative; z-index:3;">
+    <div class="container text-center text-light small">
+        Copyright © 2048 Villa Agency Co., Ltd. All rights reserved. Design: Hema Kothapalli
+    </div>
+</footer>
 </body>
 </html>
